@@ -11,4 +11,5 @@ s.resource_bundles = {'GITSPresentWireframe' => ['GITSPresentWireframe/Assets/**
 s.platform         = :ios, "9.0"
 s.resource = 'GITSPresentWireframe/Assets/**/*'
 s.dependency 'GITSFramework'
+s.dependency 'GITSHome'
 end

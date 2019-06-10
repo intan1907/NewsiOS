@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bw8-Wa-maf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="6X5-zB-acb">
+            <objects>
+                <viewController id="lbl-Vk-IKu" customClass="HomeVC" customModule="GITSHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LaU-5J-AlM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4M3-LL-eGb">
+                                <rect key="frame" x="163" y="323" width="49.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4M3-LL-eGb" firstAttribute="centerX" secondItem="LaU-5J-AlM" secondAttribute="centerX" id="5DB-cB-ise"/>
+                            <constraint firstItem="4M3-LL-eGb" firstAttribute="centerY" secondItem="LaU-5J-AlM" secondAttribute="centerY" id="XRG-hb-fox"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LvQ-gv-6W5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rUg-bB-sDM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3P7-EN-9KZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="656.79999999999995" y="-182.15892053973016"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sDE-WU-sdI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bw8-Wa-maf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hIg-5Y-XdP">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lbl-Vk-IKu" kind="relationship" relationship="rootViewController" id="qgd-MK-3Lw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ma-4f-Hd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-282.39999999999998" y="-182.15892053973016"/>
+        </scene>
+    </scenes>
+</document>

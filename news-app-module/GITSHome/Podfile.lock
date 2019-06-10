@@ -1,9 +1,6 @@
 PODS:
   - Alamofire (4.8.1)
   - FLAnimatedImage (1.0.12)
-  - GITSAuth (0.0.1):
-    - GITSFramework
-    - GITSNetwork
   - GITSFramework (0.0.3):
     - Alamofire (~> 4.8.1)
     - GITSNetwork
@@ -21,9 +18,6 @@ PODS:
     - Alamofire (~> 4.8.1)
     - ReachabilitySwift
     - SwiftyJSON (~> 4.2.0)
-  - GITSPresentWireframe (0.0.1):
-    - GITSFramework
-    - GITSHome
   - GITSRest (0.1.2):
     - Alamofire
     - SwiftyJSON
@@ -45,12 +39,10 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, tag `4.8.1`)
-  - GITSAuth (from `../news-app-module/GITSAuth`)
-  - GITSFramework (from `../news-app-module/GITSFramework`)
-  - GITSHome (from `../news-app-module/GITSHome`)
-  - GITSNetwork (from `../news-app-module/GITSNetwork`)
-  - GITSPresentWireframe (from `../news-app-module/GITSPresentWireframe`)
-  - GITSRest (from `../news-app-module/GITSRest`)
+  - GITSFramework (from `../GITSFramework`)
+  - GITSHome (from `../GITSHome`)
+  - GITSNetwork (from `../GITSNetwork`)
+  - GITSRest (from `../GITSRest`)
   - HexColors (from `https://github.com/mRs-/HexColors.git`, tag `6.0.0`)
   - IQKeyboardManager (from `https://github.com/hackiftekhar/IQKeyboardManager.git`, tag `v6.0.4`)
   - SBPickerSelector (from `https://github.com/Busta117/SBPickerSelector`, tag `2.0.1`)
@@ -68,18 +60,14 @@ EXTERNAL SOURCES:
   Alamofire:
     :git: https://github.com/Alamofire/Alamofire.git
     :tag: 4.8.1
-  GITSAuth:
-    :path: "../news-app-module/GITSAuth"
   GITSFramework:
-    :path: "../news-app-module/GITSFramework"
+    :path: "../GITSFramework"
   GITSHome:
-    :path: "../news-app-module/GITSHome"
+    :path: "../GITSHome"
   GITSNetwork:
-    :path: "../news-app-module/GITSNetwork"
-  GITSPresentWireframe:
-    :path: "../news-app-module/GITSPresentWireframe"
+    :path: "../GITSNetwork"
   GITSRest:
-    :path: "../news-app-module/GITSRest"
+    :path: "../GITSRest"
   HexColors:
     :git: https://github.com/mRs-/HexColors.git
     :tag: 6.0.0
@@ -131,11 +119,9 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
-  GITSAuth: 1a05c8ec842566567fad3911506208fc877c6ed9
   GITSFramework: fe1ba133223ca9b0e694332fa1a706305aca172a
   GITSHome: 244429523532c97de91355bfce0493c8c069f61f
   GITSNetwork: 6dae7e9082e2b66133a14fceafc1026dde61c6a1
-  GITSPresentWireframe: 1081500a599ea821b4767e3066a23de39eb51e80
   GITSRest: e96605090029b0f68381d15c7b373da9fee8acea
   HexColors: 59b66679d71777ba70a4ad57b1952dabd2138ca4
   IQKeyboardManager: 29514134ef0334a6fa33cf4eee11c36c064baeaf
@@ -146,6 +132,6 @@ SPEC CHECKSUMS:
   SwiftMessages: 8b3cc68dba2f1c91aac1a74c90b10287aac35371
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 1a08b4074615ac04c860efb571ad44bdf585086c
+PODFILE CHECKSUM: 0f7177b8d51f5d7bd3b886065515d66af7ebe9de
 
 COCOAPODS: 1.5.3

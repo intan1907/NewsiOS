@@ -15,11 +15,12 @@ class LoginVC: BaseViewController{
     @IBOutlet weak var txtPassword: UITextField!
     
     var input: LoginRequest?
-    var delegate: LoginViewDelegate?
     
     @IBAction func loginTapped(_ sender: Any) {
         let uname = txtUsername.text ?? ""
         let pass = txtPassword.text ?? ""
+        self.view.endEditing(true)
+        self.showLoading(view: self.view)
         self.input?.doLogin(username: uname, pass: pass);
     }
 
@@ -41,9 +42,8 @@ extension LoginVC: LoginResponse {
     
     func displayLogin() {
         self.stopLoading(isError: false, message: "")
-        self.dismiss(animated: true, completion: nil)
         self.showMessage(message: "login succeeded", error: false)
-        self.delegate?.doFinishLogin()
+        performDelegate?.doPerformToTab(vc: self, perform: performDelegate, data: [:])
     }
     
     func displayError(message: String, object: Any) {

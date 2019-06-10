@@ -1,20 +1,17 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'news-app-main' do
+target 'GITSHome' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for news-app-main
-  pod 'GITSFramework', :path => '../news-app-module/GITSFramework'
-  pod 'GITSNetwork', :path => '../news-app-module/GITSNetwork'
-  pod 'GITSPresentWireframe', :path => '../news-app-module/GITSPresentWireframe'
-  pod 'GITSAuth', :path => '../news-app-module/GITSAuth'
-  pod 'GITSHome', :path => '../news-app-module/GITSHome'
+  # Pods for GITSHome
+  pod 'GITSFramework', :path => '../GITSFramework'
+  pod 'GITSNetwork', :path => '../GITSNetwork'
 
   # Pods from GITSFramework
   pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :tag => '4.8.1'
-  pod 'GITSRest', :path => '../news-app-module/GITSRest'
+  pod 'GITSRest', :path => '../GITSRest'
   pod 'IQKeyboardManager', :git => 'https://github.com/hackiftekhar/IQKeyboardManager.git', :tag => 'v6.0.4'
   pod 'HexColors', :git => 'https://github.com/mRs-/HexColors.git', :tag => '6.0.0'
   pod 'SwiftMessages', :git => 'https://github.com/SwiftKickMobile/SwiftMessages.git', :tag => '6.0.2'
@@ -23,6 +20,13 @@ target 'news-app-main' do
   pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git', :tag => '4.2.0'
   pod 'SkyFloatingLabelTextField', :git => 'https://github.com/Skyscanner/SkyFloatingLabelTextField', :tag => 'v3.6.0'
   #pod 'ReachabilitySwift'
+end
 
+target 'GITSHomeApp' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for GITSHomeApp
+  pod 'GITSHome', :path => '../GITSHome'
 
 end

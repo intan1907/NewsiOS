@@ -29,8 +29,10 @@ struct LoginWorker {
         if message == "" {
             if (username == "intan" && pass == "intan") {
                 message = "Login berhasil"
+                onSuccess()
             } else {
                 message = "Username atau Password salah"
+                onFailed(message)
             }
         } else {
             onFailed(message)

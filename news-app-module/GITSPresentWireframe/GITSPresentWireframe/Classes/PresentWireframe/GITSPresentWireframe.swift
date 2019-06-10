@@ -7,14 +7,14 @@
 //
 
 import GITSFramework
-//import GITSHome
+import GITSHome
 
 public struct GITSPresentWireframe: GITSPerformDelegate {
     
     public init() {}
 
     public func doPerformToTab(vc: UIViewController, perform: GITSPerformDelegate?, data: [String: Any?]) {
-//        HomeWireframe.performToTab(caller: vc, perform: perform)
+        HomeWireframe.performToTab(caller: vc, perform: perform)
     }
 
 }
