@@ -1,0 +1,137 @@
+PODS:
+  - Alamofire (4.8.1)
+  - FLAnimatedImage (1.0.12)
+  - GITSAuth (0.0.1):
+    - GITSFramework
+    - GITSNetwork
+  - GITSFramework (0.0.3):
+    - Alamofire (~> 4.8.1)
+    - GITSNetwork
+    - GITSRest
+    - HexColors (~> 6.0.0)
+    - IQKeyboardManager
+    - SDWebImage
+    - SDWebImage/GIF
+    - SwiftMessages (~> 6.0.2)
+    - SwiftyJSON (~> 4.2.0)
+  - GITSNetwork (0.0.1):
+    - Alamofire (~> 4.8.1)
+    - ReachabilitySwift
+    - SwiftyJSON (~> 4.2.0)
+  - GITSRest (0.1.2):
+    - Alamofire
+    - SwiftyJSON
+  - HexColors (6.0.0)
+  - IQKeyboardManager (6.0.4)
+  - ReachabilitySwift (4.3.0)
+  - SBPickerSelector (2.0.1)
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
+  - SDWebImage/GIF (4.4.6):
+    - FLAnimatedImage (~> 1.0)
+    - SDWebImage/Core
+  - SkyFloatingLabelTextField (3.6.0)
+  - SwiftMessages (6.0.2):
+    - SwiftMessages/App (= 6.0.2)
+  - SwiftMessages/App (6.0.2)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, tag `4.8.1`)
+  - GITSAuth (from `../GITSAuth`)
+  - GITSFramework (from `../GITSFramework`)
+  - GITSNetwork (from `../GITSNetwork`)
+  - GITSRest (from `../GITSRest`)
+  - HexColors (from `https://github.com/mRs-/HexColors.git`, tag `6.0.0`)
+  - IQKeyboardManager (from `https://github.com/hackiftekhar/IQKeyboardManager.git`, tag `v6.0.4`)
+  - SBPickerSelector (from `https://github.com/Busta117/SBPickerSelector`, tag `2.0.1`)
+  - SDWebImage (from `https://github.com/rs/SDWebImage.git`, tag `4.4.6`)
+  - SkyFloatingLabelTextField (from `https://github.com/Skyscanner/SkyFloatingLabelTextField`, tag `v3.6.0`)
+  - SwiftMessages (from `https://github.com/SwiftKickMobile/SwiftMessages.git`, tag `6.0.2`)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`, tag `4.2.0`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FLAnimatedImage
+    - ReachabilitySwift
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :git: https://github.com/Alamofire/Alamofire.git
+    :tag: 4.8.1
+  GITSAuth:
+    :path: "../GITSAuth"
+  GITSFramework:
+    :path: "../GITSFramework"
+  GITSNetwork:
+    :path: "../GITSNetwork"
+  GITSRest:
+    :path: "../GITSRest"
+  HexColors:
+    :git: https://github.com/mRs-/HexColors.git
+    :tag: 6.0.0
+  IQKeyboardManager:
+    :git: https://github.com/hackiftekhar/IQKeyboardManager.git
+    :tag: v6.0.4
+  SBPickerSelector:
+    :git: https://github.com/Busta117/SBPickerSelector
+    :tag: 2.0.1
+  SDWebImage:
+    :git: https://github.com/rs/SDWebImage.git
+    :tag: 4.4.6
+  SkyFloatingLabelTextField:
+    :git: https://github.com/Skyscanner/SkyFloatingLabelTextField
+    :tag: v3.6.0
+  SwiftMessages:
+    :git: https://github.com/SwiftKickMobile/SwiftMessages.git
+    :tag: 6.0.2
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+    :tag: 4.2.0
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :git: https://github.com/Alamofire/Alamofire.git
+    :tag: 4.8.1
+  HexColors:
+    :git: https://github.com/mRs-/HexColors.git
+    :tag: 6.0.0
+  IQKeyboardManager:
+    :git: https://github.com/hackiftekhar/IQKeyboardManager.git
+    :tag: v6.0.4
+  SBPickerSelector:
+    :git: https://github.com/Busta117/SBPickerSelector
+    :tag: 2.0.1
+  SDWebImage:
+    :git: https://github.com/rs/SDWebImage.git
+    :tag: 4.4.6
+  SkyFloatingLabelTextField:
+    :git: https://github.com/Skyscanner/SkyFloatingLabelTextField
+    :tag: v3.6.0
+  SwiftMessages:
+    :git: https://github.com/SwiftKickMobile/SwiftMessages.git
+    :tag: 6.0.2
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+    :tag: 4.2.0
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  GITSAuth: 1a05c8ec842566567fad3911506208fc877c6ed9
+  GITSFramework: fe1ba133223ca9b0e694332fa1a706305aca172a
+  GITSNetwork: 6dae7e9082e2b66133a14fceafc1026dde61c6a1
+  GITSRest: e96605090029b0f68381d15c7b373da9fee8acea
+  HexColors: 59b66679d71777ba70a4ad57b1952dabd2138ca4
+  IQKeyboardManager: 29514134ef0334a6fa33cf4eee11c36c064baeaf
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+  SBPickerSelector: 73af23c58a1401799737793da244cdb52a33f3b0
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+  SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
+  SwiftMessages: 8b3cc68dba2f1c91aac1a74c90b10287aac35371
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: 7fa9ef008f4253471178319488d4a0d32653107d
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'GITSPresentWireframe' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  # Pods for GITSPresentWireframe
+  pod 'GITSFramework', :path => '../GITSFramework'
+  pod 'GITSNetwork', :path => '../GITSNetwork'
+  pod 'GITSHome', :path => '../GITSHome'
+  
+  # Pods from GITSFramework
+  pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :tag => '4.8.1'
+  pod 'CryptoSwift'
+  pod 'ChameleonFramework/Swift', :git => 'https://github.com/viccalexander/Chameleon.git', :tag => '2.2.0'
+  pod 'GITSRest', :path => '../GITSRest'
+  pod 'IQKeyboardManager', :git => 'https://github.com/hackiftekhar/IQKeyboardManager.git', :tag => 'v6.0.3'
+  pod 'HexColors', :git => 'https://github.com/mRs-/HexColors.git', :tag => '6.0.0'
+  pod 'SwiftMessages', :git => 'https://github.com/SwiftKickMobile/SwiftMessages.git', :tag => '6.0.2'
+  pod 'SBPickerSelector', :git => 'https://github.com/Busta117/SBPickerSelector', :tag => '1.2.0'
+  pod 'SDWebImage', :git => 'https://github.com/rs/SDWebImage.git', :tag => '4.3.3'
+  pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git', :tag => '4.2.0'
+  pod 'SkyFloatingLabelTextField', :git => 'https://github.com/Skyscanner/SkyFloatingLabelTextField', :tag => 'v3.6.0'
+
+end

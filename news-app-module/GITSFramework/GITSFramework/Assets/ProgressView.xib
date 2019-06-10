@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProgressView" customModule="GITSFramework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="5"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HQy-wK-cmR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="3NK-Mm-Y2b"/>
+                    </constraints>
+                </progressView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HQy-wK-cmR" secondAttribute="trailing" id="2PT-2d-2SW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="HQy-wK-cmR" secondAttribute="bottom" id="E2C-Rw-pyr"/>
+                <constraint firstItem="HQy-wK-cmR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="lQy-Gn-M0c"/>
+                <constraint firstItem="HQy-wK-cmR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zwF-SI-T2A"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="progressHeight" destination="3NK-Mm-Y2b" id="mFv-V0-OAd"/>
+                <outlet property="progressView" destination="HQy-wK-cmR" id="S35-IC-TDb"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="406.59670164917543"/>
+        </view>
+    </objects>
+</document>
