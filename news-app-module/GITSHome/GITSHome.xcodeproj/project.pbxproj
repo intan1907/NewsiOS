@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,14 @@
 		09113BEA22AE9B1C0080830E /* HomeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09113BE022AE9B1C0080830E /* HomeViewDelegate.swift */; };
 		09113BEB22AE9B1C0080830E /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09113BE222AE9B1C0080830E /* HomeWorker.swift */; };
 		230E92A6FD057C3D2F5F183C /* Pods_GITSHomeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7E132C75F31A4BED76D875 /* Pods_GITSHomeApp.framework */; };
+		4395E0FB22AF63B40066B696 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4395E0FA22AF63B40066B696 /* NewsCell.xib */; };
+		4395E0FD22AF69F00066B696 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4395E0FC22AF69F00066B696 /* NewsCell.swift */; };
+		4395E10D22AFA8020066B696 /* NewsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4395E10C22AFA8020066B696 /* NewsDetailVC.swift */; };
+		4395E10F22AFA81B0066B696 /* NewsDetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4395E10E22AFA81B0066B696 /* NewsDetailWireframe.swift */; };
+		4395E11122AFA83B0066B696 /* NewsDetailViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4395E11022AFA83B0066B696 /* NewsDetailViewDelegate.swift */; };
+		4395E11322AFA8500066B696 /* NewsDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4395E11222AFA8500066B696 /* NewsDetailWorker.swift */; };
+		4395E11522AFA91E0066B696 /* NewsDetailPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4395E11422AFA91D0066B696 /* NewsDetailPresent.swift */; };
+		4395E11722AFAB000066B696 /* NewsDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4395E11622AFAB000066B696 /* NewsDetailView.storyboard */; };
 		83205CC61D3EA3965A264F5F /* Pods_GITSHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655843149DBB31BF80E3B932 /* Pods_GITSHome.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +55,14 @@
 		09113BE022AE9B1C0080830E /* HomeViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewDelegate.swift; sourceTree = "<group>"; };
 		09113BE222AE9B1C0080830E /* HomeWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
 		23A823D4C1685BB7101B66FC /* Pods-GITSHomeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GITSHomeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GITSHomeApp/Pods-GITSHomeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4395E0FA22AF63B40066B696 /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		4395E0FC22AF69F00066B696 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		4395E10C22AFA8020066B696 /* NewsDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailVC.swift; sourceTree = "<group>"; };
+		4395E10E22AFA81B0066B696 /* NewsDetailWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailWireframe.swift; sourceTree = "<group>"; };
+		4395E11022AFA83B0066B696 /* NewsDetailViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewDelegate.swift; sourceTree = "<group>"; };
+		4395E11222AFA8500066B696 /* NewsDetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailWorker.swift; sourceTree = "<group>"; };
+		4395E11422AFA91D0066B696 /* NewsDetailPresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailPresent.swift; sourceTree = "<group>"; };
+		4395E11622AFAB000066B696 /* NewsDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsDetailView.storyboard; sourceTree = "<group>"; };
 		475DF275EEA65D4CBF95069B /* Pods-GITSHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GITSHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GITSHome/Pods-GITSHome.debug.xcconfig"; sourceTree = "<group>"; };
 		655843149DBB31BF80E3B932 /* Pods_GITSHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GITSHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E7E132C75F31A4BED76D875 /* Pods_GITSHomeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GITSHomeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,9 +137,11 @@
 		09113BD422AE9B1C0080830E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				4395E0FF22AF7A4F0066B696 /* View */,
 				09113BD522AE9B1C0080830E /* TabView.storyboard */,
-				09113BD622AE9B1C0080830E /* Assets.xcassets */,
 				09113BD722AE9B1C0080830E /* HomeView.storyboard */,
+				09113BD622AE9B1C0080830E /* Assets.xcassets */,
+				4395E11622AFAB000066B696 /* NewsDetailView.storyboard */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -131,6 +149,7 @@
 		09113BD822AE9B1C0080830E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4395E10B22AFA7D90066B696 /* NewsDetail */,
 				09113BD922AE9B1C0080830E /* Home */,
 				09113BDD22AE9B1C0080830E /* Wireframe */,
 				09113BDF22AE9B1C0080830E /* Delegate */,
@@ -142,6 +161,7 @@
 		09113BD922AE9B1C0080830E /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4395E0FE22AF6EAE0066B696 /* View */,
 				09113BDA22AE9B1C0080830E /* TabVC.swift */,
 				09113BDB22AE9B1C0080830E /* HomeVC.swift */,
 				09113BDC22AE9B1C0080830E /* HomePresent.swift */,
@@ -153,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				09113BDE22AE9B1C0080830E /* HomeWireframe.swift */,
+				4395E10E22AFA81B0066B696 /* NewsDetailWireframe.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -161,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				09113BE022AE9B1C0080830E /* HomeViewDelegate.swift */,
+				4395E11022AFA83B0066B696 /* NewsDetailViewDelegate.swift */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -169,8 +191,34 @@
 			isa = PBXGroup;
 			children = (
 				09113BE222AE9B1C0080830E /* HomeWorker.swift */,
+				4395E11222AFA8500066B696 /* NewsDetailWorker.swift */,
 			);
 			path = Worker;
+			sourceTree = "<group>";
+		};
+		4395E0FE22AF6EAE0066B696 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4395E0FC22AF69F00066B696 /* NewsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4395E0FF22AF7A4F0066B696 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4395E0FA22AF63B40066B696 /* NewsCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4395E10B22AFA7D90066B696 /* NewsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4395E10C22AFA8020066B696 /* NewsDetailVC.swift */,
+				4395E11422AFA91D0066B696 /* NewsDetailPresent.swift */,
+			);
+			path = NewsDetail;
 			sourceTree = "<group>";
 		};
 		5290618474BA3F8B9A08FFF6 /* Pods */ = {
@@ -289,7 +337,9 @@
 			files = (
 				09113BE522AE9B1C0080830E /* HomeView.storyboard in Resources */,
 				09113BE422AE9B1C0080830E /* Assets.xcassets in Resources */,
+				4395E0FB22AF63B40066B696 /* NewsCell.xib in Resources */,
 				09113BE322AE9B1C0080830E /* TabView.storyboard in Resources */,
+				4395E11722AFAB000066B696 /* NewsDetailView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,42 +406,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GITSHomeApp/Pods-GITSHomeApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
-				"${BUILT_PRODUCTS_DIR}/GITSFramework/GITSFramework.framework",
-				"${BUILT_PRODUCTS_DIR}/GITSNetwork/GITSNetwork.framework",
-				"${BUILT_PRODUCTS_DIR}/GITSRest/GITSRest.framework",
-				"${BUILT_PRODUCTS_DIR}/HexColors/HexColors.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
-				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/GITSHome/GITSHome.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-GITSHomeApp/Pods-GITSHomeApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GITSFramework.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GITSNetwork.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GITSRest.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HexColors.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GITSHome.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-GITSHomeApp/Pods-GITSHomeApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GITSHomeApp/Pods-GITSHomeApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GITSHomeApp/Pods-GITSHomeApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -402,10 +425,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				09113BE622AE9B1C0080830E /* TabVC.swift in Sources */,
+				4395E10F22AFA81B0066B696 /* NewsDetailWireframe.swift in Sources */,
 				09113BE922AE9B1C0080830E /* HomeWireframe.swift in Sources */,
+				4395E11522AFA91E0066B696 /* NewsDetailPresent.swift in Sources */,
 				09113BEA22AE9B1C0080830E /* HomeViewDelegate.swift in Sources */,
+				4395E11322AFA8500066B696 /* NewsDetailWorker.swift in Sources */,
+				4395E0FD22AF69F00066B696 /* NewsCell.swift in Sources */,
 				09113BE822AE9B1C0080830E /* HomePresent.swift in Sources */,
 				09113BEB22AE9B1C0080830E /* HomeWorker.swift in Sources */,
+				4395E11122AFA83B0066B696 /* NewsDetailViewDelegate.swift in Sources */,
+				4395E10D22AFA8020066B696 /* NewsDetailVC.swift in Sources */,
 				09113BE722AE9B1C0080830E /* HomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,31 @@
+{
+  "name": "GITSRest",
+  "version": "0.1.2",
+  "summary": "A simple Alamofire wrapper",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kumangkumeng/GITSRestIOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Rahadian Ahmad": "kumangxxx@gits.co.id"
+  },
+  "source": {
+    "git": "https://github.com/kumangkumeng/GITSRestIOS.git",
+    "tag": "0.1.2"
+  },
+  "social_media_url": "https://www.linkedin.com/in/rahadiankumang/",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "GITSRest/Classes/**/*",
+  "dependencies": {
+    "Alamofire": [
+
+    ],
+    "SwiftyJSON": [
+
+    ]
+  }
+}

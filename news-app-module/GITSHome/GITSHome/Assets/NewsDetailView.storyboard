@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C8J-WX-fLT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News DetailVC-->
+        <scene sceneID="HCO-Lo-pTz">
+            <objects>
+                <viewController id="dxs-1v-6xT" customClass="NewsDetailVC" customModule="GITSHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qbv-nI-9kO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8IT-TT-cxb">
+                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="on0-ec-dvs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Global Digital Small Business Insurance Survey: This time it’s personal" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgf-Tw-kPa">
+                                <rect key="frame" x="16" y="280" width="343" height="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Published on March 3, 2018 at 11.18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89P-f5-qX4">
+                                <rect key="frame" x="16" y="328" width="343" height="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="akG-lc-5dd" firstAttribute="trailing" secondItem="Fgf-Tw-kPa" secondAttribute="trailing" constant="16" id="8qh-4C-1vQ"/>
+                            <constraint firstItem="89P-f5-qX4" firstAttribute="top" secondItem="Fgf-Tw-kPa" secondAttribute="bottom" constant="8" id="GMK-nw-tYO"/>
+                            <constraint firstAttribute="trailing" secondItem="8IT-TT-cxb" secondAttribute="trailing" id="KY9-G3-QPR"/>
+                            <constraint firstItem="Fgf-Tw-kPa" firstAttribute="top" secondItem="8IT-TT-cxb" secondAttribute="bottom" constant="16" id="Ssa-zb-uRQ"/>
+                            <constraint firstItem="Fgf-Tw-kPa" firstAttribute="leading" secondItem="akG-lc-5dd" secondAttribute="leading" constant="16" id="Ux2-05-NYI"/>
+                            <constraint firstItem="8IT-TT-cxb" firstAttribute="top" secondItem="akG-lc-5dd" secondAttribute="top" id="bZl-5c-jy7"/>
+                            <constraint firstItem="8IT-TT-cxb" firstAttribute="leading" secondItem="akG-lc-5dd" secondAttribute="leading" id="hmx-cc-jiZ"/>
+                            <constraint firstItem="89P-f5-qX4" firstAttribute="leading" secondItem="akG-lc-5dd" secondAttribute="leading" constant="16" id="qPr-hT-5ar"/>
+                            <constraint firstItem="akG-lc-5dd" firstAttribute="trailing" secondItem="89P-f5-qX4" secondAttribute="trailing" constant="16" id="sAa-nm-c8Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="akG-lc-5dd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oDD-D6-Rx5"/>
+                    <connections>
+                        <outlet property="image" destination="8IT-TT-cxb" id="zF0-hX-Mo2"/>
+                        <outlet property="lbTime" destination="89P-f5-qX4" id="qyU-ki-z8M"/>
+                        <outlet property="lbTitle" destination="Fgf-Tw-kPa" id="fiW-Ea-DdM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mFB-Ou-AYn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1103.2" y="35.532233883058474"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="z0s-pU-5V1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C8J-WX-fLT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gn6-13-VSS">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dxs-1v-6xT" kind="relationship" relationship="rootViewController" id="jcD-ge-9R7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mid-V7-J7j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="164" y="35.532233883058474"/>
+        </scene>
+    </scenes>
+</document>

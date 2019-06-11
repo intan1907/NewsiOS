@@ -1,0 +1,32 @@
+{
+  "name": "GITSPresentWireframe",
+  "version": "0.0.1",
+  "summary": "A short description of swift-ios-framework.",
+  "homepage": "http://git.gits.id/RnD/swift-ios-framework",
+  "license": "MIT (ios)",
+  "authors": {
+    "GITS Indonesia": "yatnosudar@gits.co.id"
+  },
+  "source": {
+    "git": "http://git.gits.id/RnD/swift-ios-framework.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "GITSPresentWireframe/Classes/**/*.{h,m,swift}",
+  "resource_bundles": {
+    "GITSPresentWireframe": [
+      "GITSPresentWireframe/Assets/**/*.{storyboard,xib,xcassets,json,imageset,png,plist}"
+    ]
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "resources": "GITSPresentWireframe/Assets/**/*",
+  "dependencies": {
+    "GITSFramework": [
+
+    ],
+    "GITSHome": [
+
+    ]
+  }
+}

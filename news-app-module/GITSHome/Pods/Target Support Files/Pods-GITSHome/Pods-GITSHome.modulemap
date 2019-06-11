@@ -1,0 +1,6 @@
+framework module Pods_GITSHome {
+  umbrella header "Pods-GITSHome-umbrella.h"
+
+  export *
+  module * { export * }
+}

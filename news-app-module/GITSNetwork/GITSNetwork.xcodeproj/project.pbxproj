@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4395E10522AF7B710066B696 /* NotifModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4395E10122AF7B710066B696 /* NotifModel.swift */; };
+		4395E10622AF7B710066B696 /* JadwalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4395E10222AF7B710066B696 /* JadwalModel.swift */; };
+		4395E10722AF7B710066B696 /* JSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4395E10322AF7B710066B696 /* JSModel.swift */; };
+		4395E10822AF7B710066B696 /* JadwalSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4395E10422AF7B710066B696 /* JadwalSettingsModel.swift */; };
+		4395E10A22AF7B850066B696 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4395E10922AF7B850066B696 /* NewsModel.swift */; };
 		4E5969EF3903AD10F185E460 /* Pods_GITSNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C34354CD55F6FD1DCF64EA4 /* Pods_GITSNetwork.framework */; };
 		9210C201224DC3B200801F53 /* DAORegencyBaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9210C1F9224DC3B100801F53 /* DAORegencyBaseClass.swift */; };
 		9210C202224DC3B200801F53 /* DAOProvincePagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9210C1FA224DC3B100801F53 /* DAOProvincePagination.swift */; };
@@ -30,6 +35,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4395E10122AF7B710066B696 /* NotifModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifModel.swift; sourceTree = "<group>"; };
+		4395E10222AF7B710066B696 /* JadwalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JadwalModel.swift; sourceTree = "<group>"; };
+		4395E10322AF7B710066B696 /* JSModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSModel.swift; sourceTree = "<group>"; };
+		4395E10422AF7B710066B696 /* JadwalSettingsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JadwalSettingsModel.swift; sourceTree = "<group>"; };
+		4395E10922AF7B850066B696 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		5C34354CD55F6FD1DCF64EA4 /* Pods_GITSNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GITSNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7264DC434CC6449E6B9F5E0E /* Pods-GITSNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GITSNetwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-GITSNetwork/Pods-GITSNetwork.release.xcconfig"; sourceTree = "<group>"; };
 		9210C1F9224DC3B100801F53 /* DAORegencyBaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAORegencyBaseClass.swift; sourceTree = "<group>"; };
@@ -83,6 +93,18 @@
 				7264DC434CC6449E6B9F5E0E /* Pods-GITSNetwork.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4395E10022AF7B710066B696 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4395E10122AF7B710066B696 /* NotifModel.swift */,
+				4395E10222AF7B710066B696 /* JadwalModel.swift */,
+				4395E10322AF7B710066B696 /* JSModel.swift */,
+				4395E10422AF7B710066B696 /* JadwalSettingsModel.swift */,
+				4395E10922AF7B850066B696 /* NewsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		92BCBA64224B866C009BC56E /* Network */ = {
@@ -154,6 +176,7 @@
 		A9D8A82C200B8B5E00D19AF7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4395E10022AF7B710066B696 /* Model */,
 				92BCBA6A224B897D009BC56E /* DAO */,
 				92BCBA67224B86B3009BC56E /* Parameter */,
 				92BCBA64224B866C009BC56E /* Network */,
@@ -277,11 +300,14 @@
 				9210C201224DC3B200801F53 /* DAORegencyBaseClass.swift in Sources */,
 				9210C20C224DC4D700801F53 /* RegionalParam.swift in Sources */,
 				9210C206224DC3B200801F53 /* DAOProvinceData.swift in Sources */,
+				4395E10822AF7B710066B696 /* JadwalSettingsModel.swift in Sources */,
 				9210C205224DC3B200801F53 /* DAORegencyContent.swift in Sources */,
+				4395E10A22AF7B850066B696 /* NewsModel.swift in Sources */,
 				9210C202224DC3B200801F53 /* DAOProvincePagination.swift in Sources */,
 				92BCBA6D224B898F009BC56E /* DAOJadwalSholatBaseClass.swift in Sources */,
 				9210C207224DC3B200801F53 /* DAORegencyData.swift in Sources */,
 				9210C20A224DC3D800801F53 /* ProvinceParam.swift in Sources */,
+				4395E10622AF7B710066B696 /* JadwalModel.swift in Sources */,
 				92BCBA69224B86C8009BC56E /* JadwalParam.swift in Sources */,
 				92AD49FA224E2D3B00B6C59F /* NetworkManager.swift in Sources */,
 				92BCBA6E224B898F009BC56E /* DAOJadwalSholatResult.swift in Sources */,
@@ -289,6 +315,8 @@
 				A9D8A837200B8EA100D19AF7 /* GITSApps.swift in Sources */,
 				9210C204224DC3B200801F53 /* DAOProvinceContent.swift in Sources */,
 				9210C208224DC3B200801F53 /* DAOProvinceBaseClass.swift in Sources */,
+				4395E10522AF7B710066B696 /* NotifModel.swift in Sources */,
+				4395E10722AF7B710066B696 /* JSModel.swift in Sources */,
 				92BCBA66224B8682009BC56E /* NetworkJadwal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

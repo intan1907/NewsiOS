@@ -1,0 +1,35 @@
+{
+  "name": "GITSNetwork",
+  "version": "0.0.1",
+  "summary": "A short description of swift-ios-framework.",
+  "homepage": "https://source.gits.id/RnD/swift-ios-framework",
+  "license": "MIT (ios)",
+  "authors": {
+    "GITS Indonesia": "ajie@gits.co.id"
+  },
+  "source": {
+    "git": "https://source.gits.id/RnD/swift-ios-framework.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "GITSNetwork/Classes/**/*.{h,m,swift}",
+  "resource_bundles": {
+    "GITSNetwork": [
+      "GITSNetwork/Assets/**/*.{storyboard,xib,xcassets,json,imageset,png,plist}"
+    ]
+  },
+  "resources": "GITSNetwork/Assets/**",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "dependencies": {
+    "Alamofire": [
+      "~>4.8.1"
+    ],
+    "SwiftyJSON": [
+      "~>4.2.0"
+    ],
+    "ReachabilitySwift": [
+
+    ]
+  }
+}

@@ -7,7 +7,25 @@
 //
 
 import Foundation
+import GITSFramework
+import GITSNetwork
 
-struct HomePresent{
+protocol HomeRequest: BaseRequest {
+    func doGetNews()
+}
+
+protocol HomeResponse: BaseResponse {
+    func displayNews(result: [NewsModel])
+}
+
+struct HomePresent: HomeRequest {
+    var output: HomeResponse?
     
+    func doGetNews() {
+        HomeWorker.doGetNews(onSuccess: { (result) in
+            self.output?.displayNews(result: result)
+        }) { (error) in
+            self.output?.displayError(message: error, object: "News")
+        }
+    }
 }

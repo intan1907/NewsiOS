@@ -18,7 +18,7 @@ target 'GITSHome' do
   pod 'SDWebImage', :git => 'https://github.com/rs/SDWebImage.git', :tag => '4.4.6'
   pod 'SBPickerSelector', :git => 'https://github.com/Busta117/SBPickerSelector', :tag => '2.0.1'
   pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git', :tag => '4.2.0'
-  pod 'SkyFloatingLabelTextField', :git => 'https://github.com/Skyscanner/SkyFloatingLabelTextField', :tag => 'v3.6.0'
+  pod 'SkyFloatingLabelTextField', :git => 'https://github.com/Skyscanner/SkyFloatingLabelTextField', :tag => 'v3.7.0'
   #pod 'ReachabilitySwift'
 end
 

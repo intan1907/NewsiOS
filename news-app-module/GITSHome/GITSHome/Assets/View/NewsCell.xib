@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="86" id="ZSb-WI-7Pr" customClass="NewsCell" customModule="GITSHome" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZSb-WI-7Pr" id="UbP-cO-Xc8" customClass="NewsCell" customModule="GITSHome" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oAN-fi-4iU">
+                        <rect key="frame" x="8" y="8" width="100" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="64" id="4mo-aE-uJN"/>
+                            <constraint firstAttribute="width" constant="100" id="i3Y-iT-2Db"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MWh-Ac-PhA">
+                        <rect key="frame" x="116" y="19" width="235" height="42.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Global Digital Small Business Insurance Survey: This time it’s personal" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wc4-f7-pmE">
+                                <rect key="frame" x="0.0" y="0.0" width="235" height="34.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="September 28, 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCd-aL-FjH">
+                                <rect key="frame" x="0.0" y="42.5" width="235" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MWh-Ac-PhA" firstAttribute="top" secondItem="UbP-cO-Xc8" secondAttribute="topMargin" constant="8" id="0eW-jH-eha"/>
+                    <constraint firstItem="oAN-fi-4iU" firstAttribute="top" secondItem="UbP-cO-Xc8" secondAttribute="top" constant="8" id="3Q7-cK-Q6g"/>
+                    <constraint firstItem="MWh-Ac-PhA" firstAttribute="leading" secondItem="oAN-fi-4iU" secondAttribute="trailing" constant="8" id="5jr-P5-boW"/>
+                    <constraint firstAttribute="bottom" secondItem="oAN-fi-4iU" secondAttribute="bottom" constant="8" id="Y56-Kn-EMM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="MWh-Ac-PhA" secondAttribute="trailing" constant="8" id="cry-Yl-8f0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="MWh-Ac-PhA" secondAttribute="bottom" constant="8" id="t0S-XI-dX1"/>
+                    <constraint firstItem="oAN-fi-4iU" firstAttribute="leading" secondItem="UbP-cO-Xc8" secondAttribute="leading" constant="8" id="y0K-zh-MyX"/>
+                    <constraint firstAttribute="bottom" secondItem="oAN-fi-4iU" secondAttribute="bottom" constant="8" id="zBH-Pe-kBP"/>
+                </constraints>
+                <connections>
+                    <outlet property="imgNews" destination="oAN-fi-4iU" id="KtG-cF-SeP"/>
+                    <outlet property="lbDate" destination="CCd-aL-FjH" id="PgT-yC-Pot"/>
+                    <outlet property="lbTitle" destination="Wc4-f7-pmE" id="wLO-5J-HJW"/>
+                </connections>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgNews" destination="oAN-fi-4iU" id="1Br-Oj-X8B"/>
+                <outlet property="lbDate" destination="CCd-aL-FjH" id="odR-Sm-BAq"/>
+                <outlet property="lbTitle" destination="Wc4-f7-pmE" id="WF2-Cg-n67"/>
+            </connections>
+            <point key="canvasLocation" x="197.59999999999999" y="46.776611694152926"/>
+        </tableViewCell>
+    </objects>
+</document>
