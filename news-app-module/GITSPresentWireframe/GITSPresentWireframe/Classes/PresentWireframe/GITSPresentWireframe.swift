@@ -16,5 +16,9 @@ public struct GITSPresentWireframe: GITSPerformDelegate {
     public func doPerformToTab(vc: UIViewController, perform: GITSPerformDelegate?, data: [String: Any?]) {
         HomeWireframe.performToTab(caller: vc, perform: perform)
     }
+    
+    public func doPerformToDetailNews(vc: UIViewController, perform: GITSPerformDelegate?, data: [String: Any?]) {
+        NewsDetailWireframe.performNewsDetail(caller: vc, perform: perform, data: data)
+    }
 
 }

@@ -12,5 +12,7 @@ public protocol GITSPerformDelegate {
     
     func doPerformToTab(vc: UIViewController, perform: GITSPerformDelegate?, data: [String: Any?])
     
+    func doPerformToDetailNews(vc: UIViewController, perform: GITSPerformDelegate?, data: [String: Any?])
+    
 }
 

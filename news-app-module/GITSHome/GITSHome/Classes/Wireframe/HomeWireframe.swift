@@ -15,6 +15,7 @@ public class HomeWireframe {
         let storyboard = UIStoryboard(name: "HomeView", bundle: bundleHome)
         let vc = storyboard.instantiateInitialViewController() as! UINavigationController
         let vc_nav = vc.topViewController as! HomeVC
+        vc_nav.title = "Home"
         vc_nav.performDelegate = perform
         return vc
     }

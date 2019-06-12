@@ -24,7 +24,7 @@ class TabVC: UITabBarController {
         let home = HomeWireframe.initHomeVC(perform: performDelegate)
         home.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "ic_home"), tag: 0)
         
-        let bookmark = NewsDetailWireframe.initNewsDetailVC(perform: performDelegate)
+        let bookmark = HomeWireframe.initHomeVC(perform: performDelegate)
         bookmark.tabBarItem = UITabBarItem(title: "Bookmark", image: UIImage(named: "ic_bookmark"), tag: 1)
         
         let vcs: [UIViewController] = [home, bookmark]

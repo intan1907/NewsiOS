@@ -17,7 +17,8 @@ class NewsDetailVC: BaseViewController {
     @IBOutlet weak var lbTime: UILabel!
     
     var input: NewsDetailRequest?
-    var id: Int = 0
+    public var id: Int = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,7 @@ class NewsDetailVC: BaseViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.input?.doGetDetailNews(id: 0)
+        self.input?.doGetDetailNews(id: id)
     }
     
 
@@ -62,7 +63,7 @@ extension NewsDetailVC: NewsDetailResponse {
     
     func displayDetailNews(result: NewsModel) {
         // set view
-        self.image = UIImageView(image: UIImage(named: "new_statesman_events")!)
+        self.image.image = UIImage(named: result.image!) ?? nil
         self.lbTitle.text = result.title!
         self.lbTime.text = "Published on \(result.date!) at \(result.time!)"
     }

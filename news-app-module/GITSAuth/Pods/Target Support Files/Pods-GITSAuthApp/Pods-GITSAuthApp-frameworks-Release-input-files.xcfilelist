@@ -1,0 +1,13 @@
+${PODS_ROOT}/Target Support Files/Pods-GITSAuthApp/Pods-GITSAuthApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework
+${BUILT_PRODUCTS_DIR}/GITSFramework/GITSFramework.framework
+${BUILT_PRODUCTS_DIR}/GITSNetwork/GITSNetwork.framework
+${BUILT_PRODUCTS_DIR}/GITSRest/GITSRest.framework
+${BUILT_PRODUCTS_DIR}/HexColors/HexColors.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
+${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
+${BUILT_PRODUCTS_DIR}/GITSAuth/GITSAuth.framework

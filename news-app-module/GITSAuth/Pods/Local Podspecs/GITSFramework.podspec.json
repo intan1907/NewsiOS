@@ -1,0 +1,53 @@
+{
+  "name": "GITSFramework",
+  "version": "0.0.3",
+  "summary": "A short description of swift-ios-framework.",
+  "homepage": "http://git.gits.id/RnD/swift-ios-framework",
+  "license": "MIT (ios)",
+  "authors": {
+    "GITS Indonesia": "yatnosudar@gits.co.id"
+  },
+  "source": {
+    "git": "http://git.gits.id/RnD/swift-ios-framework.git",
+    "tag": "0.0.3"
+  },
+  "source_files": "GITSFramework/Classes/**/*.{h,m,swift}",
+  "resource_bundles": {
+    "GITSFramework": [
+      "GITSFramework/Assets/**/*.{storyboard,xib,xcassets,json,imageset,png,plist}"
+    ]
+  },
+  "resources": "GITSFramework/Assets/**",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "dependencies": {
+    "Alamofire": [
+      "~>4.8.1"
+    ],
+    "GITSNetwork": [
+
+    ],
+    "GITSRest": [
+
+    ],
+    "HexColors": [
+      "~>6.0.0"
+    ],
+    "IQKeyboardManager": [
+
+    ],
+    "SDWebImage": [
+
+    ],
+    "SDWebImage/GIF": [
+
+    ],
+    "SwiftMessages": [
+      "~>6.0.2"
+    ],
+    "SwiftyJSON": [
+      "~>4.2.0"
+    ]
+  }
+}

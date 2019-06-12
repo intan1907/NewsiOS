@@ -15,7 +15,8 @@ class HomeVC: BaseViewController{
     @IBOutlet weak var pageView: UIPageControl!
     @IBOutlet weak var tableView: UITableView!
     
-    var imgArr: [UIImage] = []
+    var imgArr = [UIImage(named: "img_news1") ?? nil,
+                  UIImage(named: "img_news2") ?? nil]
     var timer = Timer()
     var counter = 0
 
@@ -27,6 +28,10 @@ class HomeVC: BaseViewController{
 
         // Do any additional setup after loading the view.
         self.configureView()
+        
+//        tableView.rowHeight = UITableView.automaticDimension
+//        tableView.estimatedRowHeight = 300
+        
         pageView.numberOfPages = imgArr.count
         pageView.currentPage = 0
         DispatchQueue.main.async {
@@ -38,16 +43,6 @@ class HomeVC: BaseViewController{
         super.viewDidAppear(animated)
         self.input?.doGetNews()
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     @objc func changeImage() {
     
@@ -70,13 +65,14 @@ class HomeVC: BaseViewController{
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func configureView() {
-        self.tableView.register(UINib(nibName: "NewsCell", bundle: self.nibBundle), forCellReuseIdentifier: "NewsCell")
+//        self.tableView.register(UINib(nibName: "NewsCell", bundle: self.nibBundle), forCellReuseIdentifier: "NewsCell")
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         self.reloadData()
     }
     
     func reloadData() {
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
+        
         self.tableView.reloadData()
     }
     
@@ -95,15 +91,13 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
             return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
-    }
+//    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return UITableView.automaticDimension
+//    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-//            let data = self.newsList[indexPath.row]
-//            self.delegate?.getContact(data: data)
-//            self.navigationController?.popViewController(animated: true)
+        let data = ["id": indexPath.row]
+        performDelegate?.doPerformToDetailNews(vc: self, perform: performDelegate, data: data)
     }
     
 }
@@ -122,14 +116,14 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource {
     }
 }
 
-extension ViewController: UICollectionViewDelegateFlowLayout {
+extension HomeVC: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = sliderCollectionView.frame.size
+        let size = collectionView.frame.size
         return CGSize(width: size.width, height: size.height)
     }
     

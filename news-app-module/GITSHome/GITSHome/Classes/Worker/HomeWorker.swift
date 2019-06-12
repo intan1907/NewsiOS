@@ -15,8 +15,8 @@ struct HomeWorker {
         var data: [NewsModel] = []
         
         // dummy
-        let model1 = NewsModel(title: "Global Digital Small Business Insurance Survey: This time it’s personal", date: "March 4, 2018", image: nil)
-        let model2 = NewsModel(title: "‘The Shape of Water’ Wins Best Picture as Oscars Project Diversity", date: "March 3, 2018", image: nil)
+        let model1 = NewsModel(title: "Global Digital Small Business Global Digital Small Business Global Digital Small Business Global Digital Small Business Global Digital Small Business Global Digital Small Business", date: "March 4, 2018", image: "img_news1")
+        let model2 = NewsModel(title: "‘The Shape of Water’ Wins Best Picture", date: "March 3, 2018", image: "img_news2")
         
         data = [model1, model2]
         onSuccess(data)

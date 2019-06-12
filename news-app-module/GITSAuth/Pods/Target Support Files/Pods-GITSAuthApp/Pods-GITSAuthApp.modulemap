@@ -1,0 +1,6 @@
+framework module Pods_GITSAuthApp {
+  umbrella header "Pods-GITSAuthApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
